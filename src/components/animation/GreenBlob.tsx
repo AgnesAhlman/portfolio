@@ -7,7 +7,7 @@ const GreenBlob: React.FC = () => {
       '#blob1',
       { path: '#blob1' },
       { path: '#blob2' },
-      { repeat: 999, duration: 4000, yoyo: true },
+      { repeat: 999, duration: 7000, yoyo: true },
     );
     tween.start();
   });

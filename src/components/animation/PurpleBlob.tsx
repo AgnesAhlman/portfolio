@@ -7,7 +7,7 @@ const PurpleBlob: React.FC = () => {
       '#purple1',
       { path: '#purple1' },
       { path: '#purple2' },
-      { repeat: 999, duration: 3000, yoyo: true },
+      { repeat: 999, duration: 5000, yoyo: true },
     );
     tween.start();
   });

@@ -35,9 +35,22 @@
   top: 0;
   right: 0;
 }
+.purpleBlob {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
 
 .title {
   font-size: 5rem;
   margin-top: 0;
   line-height: 4rem;
+}
+
+.cvLink {
+  color: rgb(52, 51, 51);
+  text-decoration: inherit;
+  border: 1px solid purple;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
 }

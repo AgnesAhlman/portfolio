@@ -19,16 +19,23 @@ const Header: React.FC = () => {
               <br />
               Developer
             </h1>
+            <div className={styles.cvLinkContainer}>
+              <a href="cv_Agnes.pdf" download="cv_Agnes.pdf" className={styles.cvLink}>
+                Download CV
+              </a>
+            </div>
           </div>
           <div className={styles.imgContainer}>
             <img src={HeroImg} className={styles.img} />
           </div>
           <div className={styles.animation}>
             <GreenBlob />
-            <PurpleBlob />
           </div>
         </div>
       </Wrapper>
+      {/* <div className={styles.purpleBlob}>
+        <PurpleBlob />
+      </div> */}
     </div>
   );
 };
