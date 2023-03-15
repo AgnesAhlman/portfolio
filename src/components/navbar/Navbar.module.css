@@ -28,3 +28,12 @@
 span {
   font-size: 1.5rem;
 }
+
+@media (max-width: 481px) {
+  .container {
+    border: none;
+  }
+  .links {
+    display: none;
+  }
+}
