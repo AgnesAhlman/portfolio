@@ -4,7 +4,6 @@ import Wrapper from '../wrapper/Wrapper';
 import styles from './Header.module.css';
 import HeroImg from '../../assets/heroImg.png';
 import GreenBlob from '../animation/GreenBlob';
-import PurpleBlob from '../animation/PurpleBlob';
 
 const Header: React.FC = () => {
   return (
@@ -13,7 +12,7 @@ const Header: React.FC = () => {
         <Navbar />
         <div className={styles.contentContainer}>
           <div className={styles.titleContainer}>
-            <p>PORTFOLIO: AGNES AHLMAN</p>
+            <p className={styles.portfolio}>PORTFOLIO: AGNES AHLMAN</p>
             <h1 className={styles.title}>
               Frontend
               <br />
@@ -28,14 +27,11 @@ const Header: React.FC = () => {
           <div className={styles.imgContainer}>
             <img src={HeroImg} className={styles.img} />
           </div>
-          <div className={styles.animation}>
-            <GreenBlob />
-          </div>
         </div>
       </Wrapper>
-      {/* <div className={styles.purpleBlob}>
-        <PurpleBlob />
-      </div> */}
+      <div className={styles.animation}>
+        <GreenBlob />
+      </div>
     </div>
   );
 };

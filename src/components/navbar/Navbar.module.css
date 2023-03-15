@@ -3,6 +3,7 @@
   border-bottom: 1px solid rgb(84, 84, 84);
   z-index: 99;
   width: 100%;
+  margin-bottom: 2rem;
 }
 .content {
   display: flex;
@@ -16,4 +17,14 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  font-family: 'Tilt Warp', cursive;
+  color: rgb(90, 89, 89);
+}
+
+.agnes {
+  font-family: 'Tilt Warp', cursive;
+}
+
+span {
+  font-size: 1.5rem;
 }

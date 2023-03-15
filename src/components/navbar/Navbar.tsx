@@ -7,7 +7,9 @@ const Navbar: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.agnes}>
-            <p>agnes.</p>
+            <p>
+              agnes<span>.</span>
+            </p>
           </div>
 
           <div className={styles.links}>

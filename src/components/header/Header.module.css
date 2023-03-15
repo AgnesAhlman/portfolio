@@ -7,22 +7,26 @@
 .contentContainer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   height: 70vh;
 }
 
 .titleContainer {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  margin-bottom: 2rem;
+  z-index: 99;
 }
 
 .imgContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  align-items: center;
 }
 
 .img {
@@ -32,25 +36,46 @@
 
 .animation {
   position: absolute;
+  width: 650px;
+  height: 550px;
   top: 0;
-  right: 0;
-}
-.purpleBlob {
-  position: absolute;
-  top: 50%;
   right: 0;
 }
 
 .title {
   font-size: 5rem;
-  margin-top: 0;
   line-height: 4rem;
+  margin-bottom: 4rem;
 }
 
 .cvLink {
-  color: rgb(52, 51, 51);
+  color: #c384e2;
   text-decoration: inherit;
-  border: 1px solid purple;
+  border: 3px solid #c57ee8;
   padding: 0.5rem 1rem;
   border-radius: 16px;
+  font-family: 'Tilt Warp', cursive;
+}
+
+@media (max-width: 481px) {
+  .contentContainer {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .portfolio {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 961px) {
+  .titleContainer + .imgContainer {
+    width: 50%;
+  }
 }
