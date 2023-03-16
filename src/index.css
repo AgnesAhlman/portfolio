@@ -22,9 +22,11 @@ body {
   display: flex;
   min-height: 100vh;
 }
-/* h1 {
+h1,
+h2,
+h4 {
   font-family: 'Gloock', serif;
-} */
+}
 
 h1,
 h2,

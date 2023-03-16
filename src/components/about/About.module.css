@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 90vh;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.purpleBlob {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: -50px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding: 2rem 5rem;
+  z-index: 99;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 2rem 5rem;
+  border-left: 1px solid rgb(82, 80, 80);
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.text,
+.subtitle {
+  margin-bottom: 2rem;
+}
+
+.text {
+  text-align: center;
+  width: 60ch;
+}
+
+.links {
+}
