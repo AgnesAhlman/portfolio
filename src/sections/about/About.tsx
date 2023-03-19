@@ -38,21 +38,19 @@ const About: React.FC = () => {
               <h4>I love being creative, whether it’s coding or art.</h4>
             </div>
             <p className={styles.text}>
-              My main focus is on frontend development, but I am also curious about the backend and
-              enjoy learning about the full development stack.
+              I love problemsolving and my main focus is on frontend development, but I am also
+              curious about the backend and enjoy learning more about it.
             </p>
             <p className={styles.text}>
               Beyond my technical skills, I also have a lot of experience with leadership and
               working with people. As a former preschool teacher, I understand the importance of
-              effective communication and teamwork. I am able to motivate and inspire others to work
-              towards a common goal, ensuring that every project is a collaborative effort.
+              effective communication and teamwork.
             </p>
             <p className={styles.text}>
               I am constantly seeking new opportunities to expand my skills and knowledge in web
               development, and I am excited to see where my passion will take me in the future.
             </p>
           </div>
-          <div></div>
         </div>
       </div>
     </>

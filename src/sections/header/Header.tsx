@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../navbar/Navbar';
-import Wrapper from '../wrapper/Wrapper';
+import Navbar from '../../components/navbar/Navbar';
+import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './Header.module.css';
 import HeroImg from '../../assets/heroImg.png';
-import GreenBlob from '../animation/GreenBlob';
+import GreenBlob from '../../components/animation/GreenBlob';
 
 const Header: React.FC = () => {
   return (

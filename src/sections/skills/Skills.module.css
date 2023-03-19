@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  min-height: 90vh;
+}
+
+.skillBoxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.frontend,
+.backend,
+.toolbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  width: 20%;
+}
+
+.frontend {
+  background-color: #c2d8c5;
+}
+
+.backend {
+  background-color: #d5c2d8;
+}
+
+.toolbox {
+  background-color: #e3d5ac;
+}
+
+.iconFrontend {
+  color: #9ab29d;
+}
+
+.iconBackend {
+  color: #b29cb5;
+}
+
+.iconToolbox {
+  color: #bdb18d;
+}

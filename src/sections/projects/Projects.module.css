@@ -1,0 +1,14 @@
+.ipad {
+  width: 50%;
+  position: absolute;
+  right: -4%;
+}
+
+.img {
+  width: 100%;
+  position: absolute;
+}
+
+.svg {
+  z-index: 99;
+}
