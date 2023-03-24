@@ -15,23 +15,7 @@ const About: React.FC = () => {
           <div className={styles.purpleBlob}>
             <img src={PurpleBlob} width={550} />
           </div>
-          <div className={styles.info}>
-            <HiLocationMarker />
-            <p>Lund,Sweden</p>
-            <BsFillPersonFill />
-            <p>28 years</p>
-            <div className={styles.links}>
-              <a>
-                <IoLogoLinkedin />
-              </a>
-              <a>
-                <FaGithub />
-              </a>
-              <a>
-                <RiInstagramFill />
-              </a>
-            </div>
-          </div>
+
           <div className={styles.textContainer}>
             <h2 className={styles.title}>Hi, I&apos;m Agnes!</h2>
             <div className={styles.subtitle}>
@@ -50,6 +34,23 @@ const About: React.FC = () => {
               I am constantly seeking new opportunities to expand my skills and knowledge in web
               development, and I am excited to see where my passion will take me in the future.
             </p>
+            <div className={styles.info}>
+              <HiLocationMarker />
+              <p>Lund,Sweden</p>
+              <BsFillPersonFill />
+              <p>28 years</p>
+              <div className={styles.links}>
+                <a>
+                  <IoLogoLinkedin />
+                </a>
+                <a>
+                  <FaGithub />
+                </a>
+                <a>
+                  <RiInstagramFill />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
