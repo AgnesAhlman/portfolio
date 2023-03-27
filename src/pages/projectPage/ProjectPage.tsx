@@ -1,16 +1,37 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Project from '../../components/project/Project';
-
-const tags = ['Javascript', 'React', 'Redux', 'MongoDB', 'Node.js', 'GCP', 'Express.js'];
+import Wrapper from '../../components/wrapper/Wrapper';
+import styles from './ProjectPage.module.css';
+import { IoMdArrowDropleft } from 'react-icons/io';
+import { projects } from './projects';
 
 const ProjectPage: React.FC = () => {
   return (
     <>
-      <div>
-        <h2>PROJECTS</h2>
-        <Project title={'Art By Ahlman'} tags={tags} image={'/artbahlman.png'}>
-          <p> About hte project hahahaladöaödaö</p>
-        </Project>
+      <div className={styles.container}>
+        <Wrapper>
+          <div className={styles.content}>
+            <div className={styles.navContainer}>
+              <Link to="/" className={styles.home}>
+                <IoMdArrowDropleft />
+                Home
+              </Link>
+              <h2 className={styles.title}>PROJECTS</h2>
+            </div>
+
+            {projects.map((project) => (
+              <Project
+                key={project.title}
+                title={project.title}
+                tags={project.tags}
+                image={project.image}
+              >
+                <p>{project.description}</p>
+              </Project>
+            ))}
+          </div>
+        </Wrapper>
       </div>
     </>
   );

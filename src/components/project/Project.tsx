@@ -8,18 +8,22 @@ interface ServiceProps extends PropsWithChildren {
 }
 
 const Project: React.FC<ServiceProps> = ({ title, tags, image, children }) => (
-  <>
-    <img src={image} className={styles.img} alt="project-img" />
-    <h5 className={styles.title}>{title}</h5>
-    <p>{children}</p>
-    <div className={styles.tags}>
-      {tags.map((tag) => (
-        <li key={tag} className={styles.tag}>
-          {tag}
-        </li>
-      ))}
+  <div className={styles.container}>
+    <div className={`${styles.imgContainer} ${styles.contentBox}`}>
+      <img src={image} className={styles.img} alt="project-img" />
     </div>
-  </>
+    <div className={`${styles.textContainer} ${styles.contentBox}`}>
+      <h5 className={styles.title}>{title}</h5>
+      <p>{children}</p>
+      <div className={styles.tagContainer}>
+        {tags.map((tag) => (
+          <li key={tag} className={styles.tag}>
+            {tag}
+          </li>
+        ))}
+      </div>
+    </div>
+  </div>
 );
 
 export default Project;

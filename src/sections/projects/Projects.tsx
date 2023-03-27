@@ -32,14 +32,16 @@ const Projects: React.FC = () => {
         <div className={styles.contentContainer}>
           <div className={styles.cell1}>
             <h2 className={styles.title}>Projects</h2>
-            <p>
+            <p className={styles.text}>
               {' '}
               If youre interested in seeing some of the work Ive done, I invite you to check out my
               projects page. There, you can browse through a selection of my favorite projects and
-              get a sense of the skills and experience Ive gained as a developer. Just click the
+              get a sense of the skills and experience I have gained as a developer. Just click the
               link below to get started. Thanks for taking the time to check out my work!
             </p>
-            <Link to="/projects">See Projects</Link>
+            <Link to="/projects" className={styles.link}>
+              See Projects
+            </Link>
           </div>
           <div className={styles.cell2}>
             <div className={styles.ipad}>

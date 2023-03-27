@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   width: 50%;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .cell2 {
@@ -25,6 +25,12 @@
 }
 .title {
   font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.text {
+  width: 50ch;
+  line-height: 1.5rem;
 }
 
 .ipad {
@@ -39,4 +45,13 @@
 
 .svg {
   z-index: 99;
+}
+
+.link {
+  text-decoration: none;
+  background-color: rgb(244, 195, 62);
+  color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  margin-top: 4rem;
+  font-family: 'Tilt Warp', cursive;
 }
