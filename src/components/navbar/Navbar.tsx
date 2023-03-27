@@ -14,7 +14,6 @@ const Navbar: React.FC = () => {
 
           <div className={styles.links}>
             <p>About</p>
-            <p>Skills</p>
             <p>Projects</p>
             <p>Contact</p>
           </div>

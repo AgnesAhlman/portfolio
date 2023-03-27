@@ -22,9 +22,7 @@ const Skills: React.FC = () => {
                 list={skillsFrontend}
                 backgroundColor={'#c2d8c5'}
                 icon={<RiCodeBoxFill color="#8ead92" size={30} />}
-              >
-                hejsan
-              </SkillBox>
+              ></SkillBox>
             </div>
 
             <div className={styles.box}>

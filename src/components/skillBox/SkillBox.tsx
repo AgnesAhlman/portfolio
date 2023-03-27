@@ -14,9 +14,9 @@ const SkillBox: React.FC<ServiceProps> = ({ title, icon, backgroundColor, list }
       <div className={styles.icon}>{icon}</div>
       <h5 className={styles.title}>{title}</h5>
       {list.map((item) => (
-        <li key={item} className={styles.list}>
+        <ul key={item} className={styles.list}>
           {item}
-        </li>
+        </ul>
       ))}
     </div>
   );
