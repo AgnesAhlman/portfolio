@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
   return (
     <>
       <div className={styles.container}>
-        <Wrapper>
+        <Wrapper justify="center">
           <div className={styles.skillBoxes}>
             <div className={styles.box}>
               <SkillBox
@@ -22,7 +22,9 @@ const Skills: React.FC = () => {
                 list={skillsFrontend}
                 backgroundColor={'#c2d8c5'}
                 icon={<RiCodeBoxFill color="#8ead92" size={30} />}
-              />
+              >
+                hejsan
+              </SkillBox>
             </div>
 
             <div className={styles.box}>

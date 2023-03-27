@@ -6,6 +6,7 @@
   width: 100%;
   min-height: 90vh;
   position: relative;
+  margin-top: 5rem;
 }
 
 .content {
@@ -69,5 +70,10 @@
   }
   .subtitle {
     font-size: 1rem;
+  }
+
+  .purpleBlob {
+    width: 50%;
+    margin-top: 5rem;
   }
 }
