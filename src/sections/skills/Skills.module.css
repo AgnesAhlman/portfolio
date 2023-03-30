@@ -18,6 +18,7 @@
 
 .box {
   min-width: 20%;
+  max-width: calc(33% - 2rem);
 }
 
 @media (max-width: 481px) {

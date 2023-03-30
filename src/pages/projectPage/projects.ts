@@ -18,6 +18,11 @@ export const projects = [
     description:
       'One of the projects we had during Technigo was that in one week do a To-do list. Its a basic project and if I had more time I would have made it more clear on which filter your on',
     image: '/todo.png',
-    tags: ['Javascript', 'React', 'Redux'],
+    tags: ['Javascript', 'React', 'Redux', 'Node.js'],
   },
 ];
+
+const tags = projects.reduce<string[]>((acc, project) => {
+  return [...acc, ...project.tags];
+}, []);
+export const allTags = [...new Set(tags)];

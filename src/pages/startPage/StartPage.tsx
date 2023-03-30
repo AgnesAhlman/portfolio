@@ -9,7 +9,7 @@ const StartPage: React.FC = () => {
     <>
       <Header />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       <Projects />
     </>
   );

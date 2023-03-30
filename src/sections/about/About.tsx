@@ -18,7 +18,7 @@ const About: React.FC = () => {
     <>
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.skillBoxes}>
+          {/* <div className={styles.skillBoxes}>
             <SkillBox
               title="Frontend"
               list={skillsFrontend}
@@ -39,7 +39,7 @@ const About: React.FC = () => {
               backgroundColor={'#e3d5ac'}
               icon={<FaToolbox color="#ad9f76" size={30} />}
             />
-          </div>
+          </div> */}
 
           <div className={styles.textContainer}>
             <h2 className={styles.title}>Hi, I&apos;m Agnes!</h2>

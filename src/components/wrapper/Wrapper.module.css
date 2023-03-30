@@ -1,6 +1,8 @@
 .wrapper {
   max-width: 1200px;
   min-height: 90vh;
+  /* background-color: rgba(255, 255, 255, 0.471);
+  padding: 1rem 4rem; */
   width: 90%;
   flex-wrap: wrap;
   display: flex;

@@ -14,7 +14,7 @@ const Project: React.FC<ServiceProps> = ({ title, tags, image, children }) => (
     </div>
     <div className={`${styles.textContainer} ${styles.contentBox}`}>
       <h5 className={styles.title}>{title}</h5>
-      <p>{children}</p>
+      <div>{children}</div>
       <div className={styles.tagContainer}>
         {tags.map((tag) => (
           <li key={tag} className={styles.tag}>

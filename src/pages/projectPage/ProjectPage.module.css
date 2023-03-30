@@ -25,3 +25,14 @@
 span {
   font-size: 1.5rem;
 }
+
+.button {
+  background-color: rgb(111, 111, 131);
+  color: white;
+}
+
+.button.active {
+  /* styles for active button */
+  background-color: #f00;
+  /* other styles */
+}

@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Project from '../../components/project/Project';
 import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './ProjectPage.module.css';
 import { IoMdArrowDropleft } from 'react-icons/io';
-import { projects } from './projects';
+import { allTags, projects } from './projects';
 
 const ProjectPage: React.FC = () => {
+  // Button state
+  const [activeProject, setActiveProject] = useState(projects);
+  const [activeTag, setActiveTag] = useState('all');
+
+  // Filter function
+  const filterProjects = (tag: string): void => {
+    setActiveTag(tag);
+    if (tag === 'all') {
+      setActiveProject(projects);
+      return;
+    }
+    const filteredProjects = projects.filter((project) =>
+      project.tags.some((t) => t.toLowerCase() === tag.toLowerCase()),
+    );
+    setActiveProject(filteredProjects);
+  };
   return (
     <>
       <div className={styles.container}>
@@ -20,7 +36,28 @@ const ProjectPage: React.FC = () => {
               <h2 className={styles.title}>PROJECTS</h2>
             </div>
 
-            {projects.map((project) => (
+            {/*  BUTTON  */}
+            <button
+              className={`${styles.button} ${activeTag === 'all' ? styles.active : ''}`}
+              onClick={() => {
+                filterProjects('all');
+              }}
+            >
+              All Projects
+            </button>
+            {allTags.map((tag) => (
+              <button
+                className={`${styles.button} ${activeTag === tag ? styles.active : ''}`}
+                key={tag}
+                onClick={() => {
+                  filterProjects(tag);
+                }}
+              >
+                {tag}
+              </button>
+            ))}
+
+            {activeProject.map((project) => (
               <Project
                 key={project.title}
                 title={project.title}
