@@ -16,7 +16,7 @@ const toolbox = ['Git', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe XD'];
 const About: React.FC = () => {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id="about">
         <div className={styles.content}>
           {/* <div className={styles.skillBoxes}>
             <SkillBox

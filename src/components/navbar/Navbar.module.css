@@ -18,7 +18,23 @@
   flex-direction: row;
   gap: 2rem;
   font-family: 'Tilt Warp', cursive;
+}
+
+.link {
+  box-shadow: inset 0 0 0 0 #65bc9f;
   color: rgb(90, 89, 89);
+  padding: 0.2rem 0.5rem;
+  margin: 0 -0.25rem;
+  transition: color 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.link:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #65bc9f;
+  border-radius: 1rem;
 }
 
 .agnes {

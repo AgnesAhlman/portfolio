@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
+
 import styles from './Navbar.module.css';
 
 const Navbar: React.FC = () => {
@@ -13,9 +16,15 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className={styles.links}>
-            <p>About</p>
-            <p>Projects</p>
-            <p>Contact</p>
+            <ScrollLink to="about" smooth={true} className={styles.link}>
+              About
+            </ScrollLink>
+            <RouterLink className={`${styles.routerLink}, ${styles.link}`} to="/projects">
+              Projects
+            </RouterLink>
+            <ScrollLink to="contact" smooth={true} className={styles.link}>
+              Contact
+            </ScrollLink>
           </div>
           <div></div>
         </div>
