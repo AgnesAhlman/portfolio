@@ -10,9 +10,9 @@ const StartPage: React.FC = () => {
     <>
       <Header />
       <About />
-      <Skills />
       <Projects />
-      <Footer />
+      <Skills />
+      {/* <Footer /> */}
     </>
   );
 };

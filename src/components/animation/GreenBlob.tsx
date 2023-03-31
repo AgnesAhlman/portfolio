@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import KUTE from 'kute.js';
 
 const GreenBlob: React.FC = () => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     const tween = KUTE.fromTo(
       '#blob1',
       { path: '#blob1' },
@@ -10,7 +10,7 @@ const GreenBlob: React.FC = () => {
       { repeat: 999, duration: 7000, yoyo: true },
     );
     tween.start();
-  });
+  }, []);
 
   return (
     <div>

@@ -32,7 +32,5 @@ span {
 }
 
 .button.active {
-  /* styles for active button */
-  background-color: #f00;
-  /* other styles */
+  background-color: white;
 }
