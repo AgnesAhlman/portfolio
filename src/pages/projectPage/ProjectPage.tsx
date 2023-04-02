@@ -56,17 +56,18 @@ const ProjectPage: React.FC = () => {
                 {tag}
               </button>
             ))}
-
-            {activeProject.map((project) => (
-              <Project
-                key={project.title}
-                title={project.title}
-                tags={project.tags}
-                image={project.image}
-              >
-                <p>{project.description}</p>
-              </Project>
-            ))}
+            <div className={styles.gridParent}>
+              {activeProject.map((project) => (
+                <Project
+                  title={project.title}
+                  tags={project.tags}
+                  image={project.image}
+                  key={project.title}
+                >
+                  <p>{project.description}</p>
+                </Project>
+              ))}
+            </div>
           </div>
         </Wrapper>
       </div>

@@ -32,5 +32,17 @@ span {
 }
 
 .button.active {
-  background-color: white;
+  background-color: rgb(111, 197, 123);
+}
+
+.gridParent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 481px) {
+  .gridParent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
