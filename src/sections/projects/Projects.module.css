@@ -1,12 +1,15 @@
 .container {
+  display: flex;
   width: 100%;
   min-height: 90vh;
-  margin-top: 5rem;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contentContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .cell1 {
@@ -29,8 +32,9 @@
 }
 
 .text {
-  width: 50ch;
-  line-height: 1.5rem;
+  text-align: center;
+  max-width: 60ch;
+  font-family: 'Tiro Devanagari Hindi', serif;
 }
 
 .ipad {
@@ -54,4 +58,19 @@
   padding: 1rem 2rem;
   margin-top: 4rem;
   font-family: 'Tilt Warp', cursive;
+}
+
+@media (max-width: 481px) {
+  .ipad,
+  .cell1 {
+    width: 100%;
+  }
+
+  .cell2 {
+    align-items: center;
+  }
+
+  .link {
+    margin-top: 2rem;
+  }
 }

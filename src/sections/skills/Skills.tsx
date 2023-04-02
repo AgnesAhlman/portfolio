@@ -5,6 +5,7 @@ import styles from './Skills.module.css';
 // import { AiFillDatabase } from 'react-icons/ai';
 // import { RiCodeBoxFill } from 'react-icons/ri';
 import SkillBox from '../../components/skillBox/SkillBox';
+import SkillsImage from '../../assets/skills.png';
 
 const skillsFrontend = ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Next.js', 'TypeScript'];
 const skillsBackend = ['Node.js', 'MongoDB', 'GCP', 'Express.js'];
@@ -15,33 +16,19 @@ const Skills: React.FC = () => {
     <>
       <div className={styles.container}>
         <Wrapper justify="center">
-          <div className={styles.skillBoxes}>
+          {/* <div className={styles.skillBoxes}>
             <div className={styles.box}>
-              <SkillBox
-                title="Frontend"
-                list={skillsFrontend}
-                backgroundColor={'#d5c2d8'}
-                color={'purple'}
-              ></SkillBox>
+              <SkillBox title="Frontend" list={skillsFrontend} color={'purple'}></SkillBox>
             </div>
 
             <div className={styles.box}>
-              <SkillBox
-                title="Backend"
-                list={skillsBackend}
-                backgroundColor={'#d5c2d8'}
-                color={'purple'}
-              />
+              <SkillBox title="Backend" list={skillsBackend} color={'purple'} />
             </div>
             <div className={styles.box}>
-              <SkillBox
-                title="Toolbox"
-                list={toolbox}
-                backgroundColor={'#d5c2d8'}
-                color={'purple'}
-              />
+              <SkillBox title="Toolbox" list={toolbox} color={'purple'} />
             </div>
-          </div>
+          </div> */}
+          <img src={SkillsImage} alt="skills-image" width={500} />
         </Wrapper>
       </div>
     </>

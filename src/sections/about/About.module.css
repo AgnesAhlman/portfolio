@@ -1,16 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   min-height: 90vh;
-  position: relative;
-  margin-top: 5rem;
-  background-image: url('blob-purple2.svg');
-  background-size: 52%;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #c2d8c5;
 }
 
 .content {

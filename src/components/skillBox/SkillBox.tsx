@@ -3,15 +3,15 @@ import styles from './SkillBox.module.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
 
 interface ServiceProps extends PropsWithChildren {
-  backgroundColor: string;
+  // backgroundColor: string;
   title: string;
   list: string[];
   color: string;
 }
 
-const SkillBox: React.FC<ServiceProps> = ({ title, backgroundColor, list, color }) => {
+const SkillBox: React.FC<ServiceProps> = ({ title, list, color }) => {
   return (
-    <div style={{ backgroundColor }} className={styles.container}>
+    <div className={styles.container}>
       <h5 className={styles.title}>{title}</h5>
       <div className={styles.list}>
         {list.map((item) => (

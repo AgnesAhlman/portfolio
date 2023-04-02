@@ -1,8 +1,49 @@
 .container {
-  width: 100%;
-  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 15vh;
+  background-color: #c2d8c5;
+  padding: 4rem;
+  border-radius: 0rem 2rem 0rem 0rem;
 }
 
-.animation {
-  max-width: 300px;
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  font-family: 'Tilt Warp', cursive;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 481px) {
+  .container {
+    margin-top: 15rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .infoText {
+    font-size: 1rem;
+  }
 }

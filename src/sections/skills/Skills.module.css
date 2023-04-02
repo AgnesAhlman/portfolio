@@ -9,20 +9,20 @@
 
 .skillBoxes {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
   width: 100%;
 }
 
 .box {
-  min-width: 20%;
-  max-width: calc(33% - 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-@media (max-width: 481px) {
+/* @media (max-width: 481px) {
   .box {
     width: 100%;
   }
-}
+} */
