@@ -43,6 +43,7 @@ const Projects: React.FC = () => {
               See Projects
             </Link>
           </div>
+
           <div className={styles.cell2}>
             <div className={styles.ipad}>
               <img

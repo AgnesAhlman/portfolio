@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Project from '../../components/project/Project';
 import Wrapper from '../../components/wrapper/Wrapper';
@@ -23,6 +23,10 @@ const ProjectPage: React.FC = () => {
     );
     setActiveProject(filteredProjects);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className={styles.container}>

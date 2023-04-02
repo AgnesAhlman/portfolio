@@ -49,15 +49,6 @@
   margin-bottom: 4rem;
 }
 
-/* .cvLink {
-  color: #c384e2;
-  text-decoration: inherit;
-  border: 3px solid #c57ee8;
-  padding: 0.5rem 1rem;
-  border-radius: 16px;
-  font-family: 'Tilt Warp', cursive;
-} */
-
 .cvLink {
   font-size: 16px;
   font-weight: 200;
@@ -136,6 +127,14 @@
 
   .portfolio {
     font-size: 0.6rem;
+  }
+
+  .img {
+    max-width: 200px;
+  }
+
+  .cvLink {
+    font-size: 10px;
   }
 }
 
