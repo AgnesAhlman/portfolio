@@ -30,21 +30,20 @@ export const projects = [
   {
     title: 'Maze',
     description:
-      'One of the projects we had during Technigo was that in one week do a To-do list. Its a basic project and if I had more time I would have made it more clear on which filter your on',
+      'React project made with Redux to practice using thunks and working with an API together with Redux. We were provided with an labyrinth game API that once you sent a post request with a username to, you got a description and two options where to go next in response, and when you sent another post request with the direction you chose you got another response etc.',
     image: '/maze-project-page.png',
     tags: ['Javascript', 'React', 'Redux'],
   },
   {
     title: 'Whos there?',
-    description:
-      'One of the projects we had during Technigo was that in one week do a To-do list. Its a basic project and if I had more time I would have made it more clear on which filter your on',
+    description: 'One of my first javascript projects during my education at Technigo',
     image: '/game-project-page.png',
     tags: ['Javascript'],
   },
   {
     title: 'Quiz',
     description:
-      'One of the projects we had during Technigo was that in one week do a To-do list. Its a basic project and if I had more time I would have made it more clear on which filter your on',
+      'This was a group project that entailed a great deal of mob programming and individual trouble-shooting. We used React hooks, props and styled components along with Redux state management to build the quiz.',
     image: '/quiz-project-page.png',
     tags: ['Javascript', 'React', 'Redux'],
   },
