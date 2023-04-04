@@ -9,11 +9,9 @@ const Navbar: React.FC = () => {
     <>
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.agnes}>
-            <p>
-              agnes<span>.</span>
-            </p>
-          </div>
+          <RouterLink to="/" className={styles.agnes}>
+            agnes<span>.</span>
+          </RouterLink>
 
           <div className={styles.links}>
             <ScrollLink to="about" smooth={true} className={styles.link}>
@@ -26,7 +24,6 @@ const Navbar: React.FC = () => {
               Contact
             </ScrollLink>
           </div>
-          <div></div>
         </div>
       </div>
     </>

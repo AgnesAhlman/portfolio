@@ -47,6 +47,11 @@
 
 .link {
   color: rgb(238, 236, 236);
+  transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+  transform: scale(1.5);
 }
 
 @media (max-width: 481px) {

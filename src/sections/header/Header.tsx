@@ -4,10 +4,6 @@ import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './Header.module.css';
 import HeroImg from '../../assets/heroImg.png';
 import GreenBlob from '../../components/animation/GreenBlob';
-import { Link } from 'react-router-dom';
-import { IoLogoLinkedin } from 'react-icons/io';
-import { FaGithub } from 'react-icons/fa';
-import { RiInstagramFill } from 'react-icons/ri';
 
 const Header: React.FC = () => {
   return (
