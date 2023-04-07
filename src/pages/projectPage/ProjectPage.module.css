@@ -73,6 +73,7 @@ span {
   cursor: pointer;
   border-radius: 1rem;
   font-family: 'Tilt Warp', cursive;
+  min-width: 8rem;
 }
 
 .button.active {
@@ -81,7 +82,7 @@ span {
   background-color: rgb(111, 197, 123);
   flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
 }
 
 .gridParent {

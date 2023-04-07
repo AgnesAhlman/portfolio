@@ -70,6 +70,7 @@ const ProjectPage: React.FC = () => {
                   tags={project.tags}
                   image={project.image}
                   key={project.title}
+                  link={project.link}
                 >
                   <p>{project.description}</p>
                 </Project>
