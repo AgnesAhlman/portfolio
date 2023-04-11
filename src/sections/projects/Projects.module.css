@@ -56,15 +56,6 @@
   z-index: 99;
 }
 
-/* .link {
-  text-decoration: none;
-  background-color: rgb(244, 195, 62);
-  color: rgb(255, 255, 255);
-  padding: 1rem 2rem;
-  margin-top: 4rem;
-  font-family: 'Tilt Warp', cursive;
-} */
-
 .link {
   font-size: 16px;
   font-weight: 200;
@@ -115,10 +106,15 @@
 
   .cell2 {
     align-items: center;
+    flex-direction: column;
   }
 
   .link {
     margin-top: 2rem;
     font-size: 10px;
+  }
+
+  .text {
+    text-align: center;
   }
 }
