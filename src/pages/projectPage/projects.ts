@@ -26,7 +26,7 @@ export const projects = [
   {
     title: 'Chatbot',
     description:
-      'One of the projects we had during Technigo was that in one week do a To-do list. Its a basic project and if I had more time I would have made it more clear on which filter your on',
+      'One of the first pair-programming projects at Technigo, we made an Ice cream chatbot',
     image: '/chatbot-project-page.png',
     tags: ['Javascript'],
     link: 'https://ice-cream-bot.netlify.app/',
@@ -34,7 +34,7 @@ export const projects = [
   {
     title: 'Maze',
     description:
-      'React project made with Redux to practice using thunks and working with an API together with Redux. We were provided with an labyrinth game API that once you sent a post request with a username to, you got a description and two options where to go next in response, and when you sent another post request with the direction you chose you got another response etc.',
+      'React project made with Redux to practice using thunks and working with an API together with Redux.',
     image: '/maze-project-page.png',
     tags: ['Javascript', 'React', 'Redux'],
     link: 'https://projectlabyrinthweek12.netlify.app/',
