@@ -59,9 +59,6 @@
 }
 
 @media (max-width: 481px) {
-  .container {
-    margin-bottom: 5rem;
-  }
   .textContainer {
     padding: 1rem;
   }
