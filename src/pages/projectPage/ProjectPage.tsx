@@ -6,6 +6,7 @@ import { allTags, projects } from './projects';
 import Navbar from '../../components/navbar/Navbar';
 import { BsCheck2 } from 'react-icons/bs';
 import Footer from '../../sections/footer/Footer';
+import DropdownMenu from '../../components/dropdown/Dropdown';
 
 const ProjectPage: React.FC = () => {
   // Button state
@@ -37,9 +38,10 @@ const ProjectPage: React.FC = () => {
             <div className={styles.topSection}>
               <div className={styles.textContainer}>
                 <h2 className={styles.title}>PROJECTS</h2>
+                <DropdownMenu activeTag={activeTag} filterProjects={filterProjects} />
               </div>
 
-              <div className={styles.buttonContainer}>
+              {/* <div className={styles.buttonContainer}>
                 <button
                   className={`${styles.button} ${activeTag === 'all' ? styles.active : ''}`}
                   onClick={() => {
@@ -61,7 +63,7 @@ const ProjectPage: React.FC = () => {
                     {activeTag === tag && <BsCheck2 className={styles.icon} />}
                   </button>
                 ))}
-              </div>
+              </div> */}
             </div>
             <div className={styles.gridParent}>
               {activeProject.map((project) => (
