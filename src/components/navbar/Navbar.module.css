@@ -21,7 +21,7 @@
 }
 
 .link {
-  color: rgb(90, 89, 89);
+  color: #e5e7ec;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -34,7 +34,7 @@
 .agnes {
   font-family: 'Tilt Warp', cursive;
   text-decoration: none;
-  color: rgb(50, 50, 50);
+  color: var(--details-color);
 }
 
 span {

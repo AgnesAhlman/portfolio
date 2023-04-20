@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import styles from './Projects.module.css';
 
 import { Link } from 'react-router-dom';
+import Lottie from 'lottie-react';
+import Animation from '../../../public/projects.json';
 
 const images = [
   '/synthax-ipad.png',
@@ -39,7 +41,8 @@ const Projects: React.FC = () => {
           </div>
 
           <div className={styles.cell2}>
-            <div className={styles.ipad}>
+            <Lottie animationData={Animation} loop={true} />
+            {/* <div className={styles.ipad}>
               <img
                 src={images[currentImageIndex]}
                 key={images[currentImageIndex]}
@@ -47,7 +50,7 @@ const Projects: React.FC = () => {
                 alt="ipad-image"
               />
               <Ipad className={styles.svg} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

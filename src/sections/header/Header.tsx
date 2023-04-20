@@ -4,6 +4,8 @@ import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './Header.module.css';
 import HeroImg from '../../assets/heroImg.png';
 import GreenBlob from '../../components/animation/GreenBlob';
+import { RiArrowDownSFill } from 'react-icons/ri';
+import { IoMdArrowDropright } from 'react-icons/io';
 
 const Header: React.FC = () => {
   return (
@@ -12,15 +14,16 @@ const Header: React.FC = () => {
         <Navbar />
         <div className={styles.contentContainer}>
           <div className={styles.titleContainer}>
-            <p className={styles.portfolio}>PORTFOLIO: AGNES AHLMAN</p>
             <h1 className={styles.title}>
               Frontend
               <br />
               Developer
             </h1>
+            <p className={styles.portfolio}>PORTFOLIO: AGNES AHLMAN </p>
+
             <div className={styles.cvLinkContainer}>
               <a href="cv_Agnes.pdf" download="cv_Agnes.pdf" className={styles.cvLink}>
-                Download CV
+                Download CV <IoMdArrowDropright />
               </a>
             </div>
           </div>

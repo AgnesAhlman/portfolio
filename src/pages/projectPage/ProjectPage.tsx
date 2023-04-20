@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Project from '../../components/project/Project';
 import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './ProjectPage.module.css';
-import { allTags, projects } from './projects';
+import { projects } from './projects';
 import Navbar from '../../components/navbar/Navbar';
-import { BsCheck2 } from 'react-icons/bs';
 import Footer from '../../sections/footer/Footer';
 import DropdownMenu from '../../components/dropdown/Dropdown';
 

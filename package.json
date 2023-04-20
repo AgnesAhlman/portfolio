@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
+    "bootstrap": "^5.2.3",
     "kute.js": "^2.2.4",
+    "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.3",
     "react-bootstrap": "^2.7.4",

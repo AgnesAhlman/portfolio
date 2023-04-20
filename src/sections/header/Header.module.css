@@ -15,11 +15,12 @@
 
 .titleContainer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 2rem;
   z-index: 99;
+  color: #e5e7ec;
 }
 
 .imgContainer {
@@ -30,7 +31,7 @@
 }
 
 .img {
-  max-width: 300px;
+  max-width: 380px;
   z-index: 1;
 }
 
@@ -46,29 +47,31 @@
 .title {
   font-size: 5rem;
   line-height: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  font-family: 'Tilt Warp', cursive;
+}
+
+.portfolio {
+  margin-bottom: 2rem;
 }
 
 .cvLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 16px;
   font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 1px solid black;
   cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   text-decoration: none;
   font-family: 'Tilt Warp', cursive;
-  color: rgb(42, 42, 42);
-  margin-top: 1.5rem;
+  color: var(--details-color);
 }
 
-.cvLink:after {
+.cvLink:hover {
+  color: rgb(218, 142, 35);
+}
+
+/* .cvLink:after {
   content: '';
   background-color: #ce7ad2;
   width: 100%;
@@ -83,9 +86,9 @@
 .cvLink:hover:after {
   top: 0px;
   left: 0px;
-}
+} */
 
-.linkContainer {
+::-webkit-validation-bubble-arro .linkContainer {
   position: fixed;
   top: 75%;
   margin-right: 3rem;
