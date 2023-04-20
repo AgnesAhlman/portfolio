@@ -4,7 +4,7 @@ import styles from './Projects.module.css';
 
 import { Link } from 'react-router-dom';
 import Lottie from 'lottie-react';
-import Animation from '../../../public/projects.json';
+import Animation from '../../../public/project-animation-slow.json';
 
 const images = [
   '/synthax-ipad.png',
@@ -32,14 +32,6 @@ const Projects: React.FC = () => {
     <>
       <div className={styles.container}>
         <div className={styles.contentContainer}>
-          <div className={styles.cell1}>
-            <h2 className={styles.title}>Projects</h2>
-            <p className={styles.text}>Check out my projects on the link below!</p>
-            <Link to="/projects" className={styles.link}>
-              See Projects
-            </Link>
-          </div>
-
           <div className={styles.cell2}>
             <Lottie animationData={Animation} loop={true} />
             {/* <div className={styles.ipad}>
@@ -51,6 +43,13 @@ const Projects: React.FC = () => {
               />
               <Ipad className={styles.svg} />
             </div> */}
+          </div>
+          <div className={styles.cell1}>
+            <h2 className={styles.title}>Projects</h2>
+            <p className={styles.text}>Check out my projects on the link below!</p>
+            <Link to="/projects" className={styles.link}>
+              See Projects
+            </Link>
           </div>
         </div>
       </div>
