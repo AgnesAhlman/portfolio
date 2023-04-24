@@ -1,3 +1,7 @@
+.dropdown {
+  position: relative;
+}
+
 .button {
   display: flex;
   flex-direction: row;
@@ -15,13 +19,11 @@
 .menu {
   display: none;
   transition: opacity 0.3s ease-in-out;
-  position: absolute;
   background-color: var(--details-color);
+  border: 1px solid var(--details-color);
   border-radius: 0.2rem;
-  min-width: 10rem;
-  max-height: 10.5rem;
-  overflow-y: auto;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  position: absolute;
 }
 
 .open {
@@ -33,7 +35,9 @@
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
-  color: #282a3c;
+  text-align: right;
+
+  color: white;
   padding: 1em;
 }
 

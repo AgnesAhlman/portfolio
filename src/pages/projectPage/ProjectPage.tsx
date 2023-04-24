@@ -44,25 +44,26 @@ const ProjectPage: React.FC = () => {
                     <CountUp end={21} duration={5} className={styles.counter} />
                   </div>
                   <p className={styles.counterText}>
-                    Since I started programming, I have done over 22 projects. Everything from
-                    Frontend to fullstack projects.
+                    Since I started programming, I have done over 22 projects. Both Frontend and
+                    Fullstack projects.
                   </p>
                 </div>
                 <DropdownMenu activeTag={activeTag} filterProjects={filterProjects} />
               </div>
-            </div>
-            <div className={styles.gridParent}>
-              {activeProject.map((project) => (
-                <Project
-                  title={project.title}
-                  tags={project.tags}
-                  image={project.image}
-                  key={project.title}
-                  link={project.link}
-                >
-                  <p>{project.description}</p>
-                </Project>
-              ))}
+
+              <div className={styles.gridParent}>
+                {activeProject.map((project) => (
+                  <Project
+                    title={project.title}
+                    tags={project.tags}
+                    image={project.image}
+                    key={project.title}
+                    link={project.link}
+                  >
+                    <p>{project.description}</p>
+                  </Project>
+                ))}
+              </div>
             </div>
           </div>
         </Wrapper>

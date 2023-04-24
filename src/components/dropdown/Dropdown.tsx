@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Dropdown.module.css';
 import { allTags } from '../../pages/projectPage/projects';
 import { BsCheck2 } from 'react-icons/bs';
+import { IoMdArrowDropdown } from 'react-icons/io';
 
 interface Props {
   activeTag: string;
@@ -19,7 +20,7 @@ const DropdownMenu: React.FC<Props> = ({ activeTag, filterProjects }) => {
           setIsOpen(!isOpen);
         }}
       >
-        Filter: {activeTag}
+        Filter Projects: {activeTag} <IoMdArrowDropdown />
       </button>
 
       <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>

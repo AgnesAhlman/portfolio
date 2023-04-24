@@ -16,22 +16,24 @@
 .topSection {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  min-height: 30vh;
+  align-items: flex-end;
+  min-height: 50vh;
 }
 
 .textContainer {
-  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 2rem;
+  align-items: center;
+  position: absolute;
+  position: fixed;
 }
 
 .title {
   font-size: 2rem;
-
   font-family: 'Tilt Warp', cursive;
+  margin-bottom: 2rem;
 }
 
 .text {
@@ -59,7 +61,8 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 30%;
+  max-width: 20rem;
+  margin-bottom: 1rem;
 }
 
 .countUp {
@@ -79,17 +82,17 @@ span {
 }
 
 .gridParent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(1, 1fr); */
+  flex-direction: column;
   gap: 3rem;
 }
 
 @media (max-width: 481px) {
-  .topSection {
-    width: 90%;
+  .textContainer {
+    position: initial;
   }
-  .gridParent {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
+  /* .gridParent {
+    display: flex;
+  } */
 }

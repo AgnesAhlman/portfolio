@@ -5,6 +5,7 @@
   padding: 2rem;
   flex-direction: column;
   align-items: center;
+  width: 50%;
 }
 
 .contentBox {
@@ -35,7 +36,7 @@
 }
 
 .tag {
-  background-color: #c2d8c5;
+  background-color: #3a3c4c;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-size: 0.8rem;
@@ -44,6 +45,9 @@
 }
 
 @media (max-width: 481px) {
+  .container {
+    width: calc(100% - 4rem);
+  }
   .contentBox {
     width: 100%;
     padding: 1rem;
