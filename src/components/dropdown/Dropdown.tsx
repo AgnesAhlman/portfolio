@@ -14,31 +14,29 @@ const DropdownMenu: React.FC<Props> = ({ activeTag, filterProjects }) => {
   return (
     <div className={styles.dropdown}>
       <button
-        className={`${styles.button} ${isOpen ? styles.active : ''}`}
+        className={styles.button}
         onClick={() => {
           setIsOpen(!isOpen);
         }}
       >
-        Filter
+        Filter: {activeTag}
       </button>
 
-      {isOpen && (
-        <ul className={styles.menu}>
-          {allTags.map((tag) => (
-            <li
-              className={`${styles.item} ${activeTag === tag ? styles.active : ''}`}
-              key={tag}
-              onClick={() => {
-                setIsOpen(false);
-                filterProjects(tag);
-              }}
-            >
-              {tag}
-              {activeTag === tag && <BsCheck2 className={styles.icon} />}
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
+        {allTags.map((tag) => (
+          <li
+            className={`${styles.item} ${activeTag === tag ? styles.active : ''}`}
+            key={tag}
+            onClick={() => {
+              setIsOpen(false);
+              filterProjects(tag);
+            }}
+          >
+            {tag}
+            {activeTag === tag && <BsCheck2 className={styles.icon} />}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

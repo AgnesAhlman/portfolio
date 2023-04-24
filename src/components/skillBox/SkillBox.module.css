@@ -1,11 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
-
+  background-color: var(--details-color);
   padding: 1rem;
-  border-radius: 1rem;
-  height: 100%;
-  width: 100%;
+  border-radius: 0.5rem;
 }
 
 .title {
@@ -13,19 +11,18 @@
   font-size: 1.2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  color: purple;
 }
 
 .list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2rem;
 }
 
 .listItem {
   /* width: calc(50% - 2rem); */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 0.5rem;
 }

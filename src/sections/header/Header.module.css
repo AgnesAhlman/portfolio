@@ -45,8 +45,8 @@
 }
 
 .title {
-  font-size: 5rem;
-  line-height: 4rem;
+  font-size: 7rem;
+  line-height: 6rem;
   margin-bottom: 2rem;
   font-family: 'Tilt Warp', cursive;
 }
@@ -67,9 +67,9 @@
   color: var(--details-color);
 }
 
-.cvLink:hover {
+/* .cvLink:hover {
   color: rgb(218, 142, 35);
-}
+} */
 
 /* .cvLink:after {
   content: '';

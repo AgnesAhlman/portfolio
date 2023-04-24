@@ -39,30 +39,6 @@ const ProjectPage: React.FC = () => {
                 <h2 className={styles.title}>PROJECTS</h2>
                 <DropdownMenu activeTag={activeTag} filterProjects={filterProjects} />
               </div>
-
-              {/* <div className={styles.buttonContainer}>
-                <button
-                  className={`${styles.button} ${activeTag === 'all' ? styles.active : ''}`}
-                  onClick={() => {
-                    filterProjects('all');
-                  }}
-                >
-                  All Projects
-                  {activeTag === 'all' && <BsCheck2 className={styles.icon} />}
-                </button>
-                {allTags.map((tag) => (
-                  <button
-                    className={`${styles.button} ${activeTag === tag ? styles.active : ''}`}
-                    key={tag}
-                    onClick={() => {
-                      filterProjects(tag);
-                    }}
-                  >
-                    {tag}
-                    {activeTag === tag && <BsCheck2 className={styles.icon} />}
-                  </button>
-                ))}
-              </div> */}
             </div>
             <div className={styles.gridParent}>
               {activeProject.map((project) => (

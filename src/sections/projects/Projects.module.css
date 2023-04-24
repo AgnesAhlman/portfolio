@@ -4,7 +4,6 @@
   min-height: 90vh;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5rem;
   position: relative;
 }
 
@@ -14,14 +13,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 0rem 5rem;
 }
 
 .cell1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(50% - 4rem);
-  padding: 2rem;
+  width: 50%;
 }
 
 .cell2 {
