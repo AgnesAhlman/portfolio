@@ -6,6 +6,7 @@ import { projects } from './projects';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../sections/footer/Footer';
 import DropdownMenu from '../../components/dropdown/Dropdown';
+import CountUp from 'react-countup';
 
 const ProjectPage: React.FC = () => {
   // Button state
@@ -37,6 +38,16 @@ const ProjectPage: React.FC = () => {
             <div className={styles.topSection}>
               <div className={styles.textContainer}>
                 <h2 className={styles.title}>PROJECTS</h2>
+                <div className={styles.countUpContainer}>
+                  <div className={styles.countUp}>
+                    <p className={styles.counter}>+</p>
+                    <CountUp end={21} duration={5} className={styles.counter} />
+                  </div>
+                  <p className={styles.counterText}>
+                    Since I started programming, I have done over 22 projects. Everything from
+                    Frontend to fullstack projects.
+                  </p>
+                </div>
                 <DropdownMenu activeTag={activeTag} filterProjects={filterProjects} />
               </div>
             </div>

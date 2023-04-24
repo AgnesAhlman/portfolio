@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-height: 30vh;
 }
 
 .textContainer {
@@ -54,23 +55,27 @@ span {
   font-size: 1.5rem;
 }
 
-.buttonContainer {
-  width: 100%;
+.countUpContainer {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.button {
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  font-size: 16px;
-  font-weight: 200;
-  cursor: pointer;
-  text-decoration: none;
-  font-family: 'Tilt Warp', cursive;
+  max-width: 30%;
+}
+
+.countUp {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+.counter {
+  font-size: 5rem;
   color: var(--details-color);
+}
+
+.counterText {
+  color: var(--details-color);
+  text-align: center;
+  margin: 0.5rem;
 }
 
 .gridParent {
