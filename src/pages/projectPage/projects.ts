@@ -10,7 +10,7 @@ export const projects = [
   {
     title: 'Art by Ahlman',
     description:
-      'Im working on a webshop for my paintings, which is still ongoing. It&apos;s a fullstack project and one of my biggest so far. It&apos;s been a great learning experience for me, and I&apos;m excited to create a platform where art lovers can browse and purchase my work online.',
+      "Im working on a webshop for my paintings, which is still ongoing. It's a fullstack project and one of my biggest so far. It's been a great learning experience for me, and I'm excited to create a platform where art lovers can browse and purchase my work online.",
     image: '/artbyahlman-project-page.png',
     tags: ['Javascript', 'React', 'Redux', 'MongoDB', 'Node.js', 'GCP', 'Express.js'],
     link: 'https://artbyahlman.se/',
@@ -40,7 +40,7 @@ export const projects = [
     link: 'https://projectlabyrinthweek12.netlify.app/',
   },
   {
-    title: 'Whos there?',
+    title: "Who's there?",
     description: 'One of my first javascript projects during my education at Technigo',
     image: '/game-project-page.png',
     tags: ['Javascript'],
