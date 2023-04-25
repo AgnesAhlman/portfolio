@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Project from '../../components/project/Project';
 import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './ProjectPage.module.css';
-import { projects } from './projects';
+import { allTags, projects } from './projects';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../sections/footer/Footer';
-import DropdownMenu from '../../components/dropdown/Dropdown';
+// import DropdownMenu from '../../components/dropdown/Dropdown';
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
+import { IoMdArrowDropright } from 'react-icons/io';
 
 const ProjectPage: React.FC = () => {
   // Button state
@@ -37,7 +39,6 @@ const ProjectPage: React.FC = () => {
             <Navbar />
             <div className={styles.topSection}>
               <div className={styles.textContainer}>
-                <h2 className={styles.title}>PROJECTS</h2>
                 <div className={styles.countUpContainer}>
                   <div className={styles.countUp}>
                     <p className={styles.counter}>+</p>
@@ -47,11 +48,41 @@ const ProjectPage: React.FC = () => {
                     Since I started programming, I have done over 22 projects. Both Frontend and
                     Fullstack projects.
                   </p>
+                  <Link
+                    to="https://github.com/AgnesAhlman"
+                    target="_blank"
+                    className={styles.githubLink}
+                  >
+                    See all on my Github <IoMdArrowDropright />
+                  </Link>
                 </div>
-                <DropdownMenu activeTag={activeTag} filterProjects={filterProjects} />
+                <div className={styles.filterButtonsContainer}>
+                  <button
+                    className={`${styles.button} ${activeTag === 'all' ? styles.active : ''}`}
+                    onClick={() => {
+                      filterProjects('all');
+                    }}
+                  >
+                    All Projects
+                  </button>
+                  {allTags.map((tag) => (
+                    <button
+                      className={`${styles.button} ${activeTag === tag ? styles.active : ''}`}
+                      key={tag}
+                      onClick={() => {
+                        filterProjects(tag);
+                      }}
+                    >
+                      {tag}
+                    </button>
+                  ))}
+                </div>
+                {/* <DropdownMenu activeTag={activeTag} filterProjects={filterProjects} /> */}
               </div>
 
               <div className={styles.gridParent}>
+                <h2 className={styles.title}>PROJECTS</h2>
+
                 {activeProject.map((project) => (
                   <Project
                     title={project.title}

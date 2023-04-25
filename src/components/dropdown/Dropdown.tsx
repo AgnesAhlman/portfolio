@@ -20,7 +20,7 @@ const DropdownMenu: React.FC<Props> = ({ activeTag, filterProjects }) => {
           setIsOpen(!isOpen);
         }}
       >
-        Filter Projects: {activeTag} <IoMdArrowDropdown />
+        FILTER PROJECTS: <span className={styles.activeTag}>{activeTag}</span> <IoMdArrowDropdown />
       </button>
 
       <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>

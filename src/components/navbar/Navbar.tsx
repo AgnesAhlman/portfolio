@@ -15,13 +15,13 @@ const Navbar: React.FC = () => {
 
           <div className={styles.links}>
             <ScrollLink to="about" smooth={true} className={styles.link}>
-              About
+              about
             </ScrollLink>
             <RouterLink className={`${styles.routerLink}, ${styles.link}`} to="/projects">
-              Projects
+              projects
             </RouterLink>
             <ScrollLink to="contact" smooth={true} className={styles.link}>
-              Contact
+              contact
             </ScrollLink>
           </div>
         </div>

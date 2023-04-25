@@ -17,7 +17,6 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  font-family: 'Tilt Warp', cursive;
 }
 
 .link {

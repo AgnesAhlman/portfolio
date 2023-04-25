@@ -4,7 +4,6 @@ import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './Header.module.css';
 import HeroImg from '../../assets/heroImg.png';
 import GreenBlob from '../../components/animation/GreenBlob';
-import { RiArrowDownSFill } from 'react-icons/ri';
 import { IoMdArrowDropright } from 'react-icons/io';
 
 const Header: React.FC = () => {
