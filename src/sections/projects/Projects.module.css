@@ -57,15 +57,16 @@
 }
 
 .link {
-  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
   font-weight: 200;
-  letter-spacing: 1px;
   cursor: pointer;
-  position: relative;
   text-decoration: none;
   font-family: 'Tilt Warp', cursive;
   color: var(--details-color);
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .link:hover {

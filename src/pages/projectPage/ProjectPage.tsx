@@ -42,7 +42,7 @@ const ProjectPage: React.FC = () => {
                 <div className={styles.countUpContainer}>
                   <div className={styles.countUp}>
                     <p className={styles.counter}>+</p>
-                    <CountUp end={21} duration={5} className={styles.counter} />
+                    <CountUp end={22} duration={5} className={styles.counter} />
                   </div>
                   <p className={styles.counterText}>
                     Since I started programming, I have done over 22 projects. Both Frontend and
