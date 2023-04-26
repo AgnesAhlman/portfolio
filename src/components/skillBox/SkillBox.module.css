@@ -22,7 +22,19 @@
 .listItem {
   /* width: calc(50% - 2rem); */
   display: flex;
+  min-width: 10 rem;
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
+}
+
+@media (max-width: 481px) {
+  .title {
+    margin-bottom: 1rem;
+  }
+  .list {
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
 }

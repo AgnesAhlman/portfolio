@@ -3,6 +3,7 @@ import styles from './About.module.css';
 import { Link } from 'react-router-dom';
 import { IoMdArrowDropright } from 'react-icons/io';
 import SkillBox from '../../components/skillBox/SkillBox';
+import { Slide } from 'react-awesome-reveal';
 
 const About: React.FC = () => {
   const [activeButton, setActiveButton] = useState('about');
@@ -66,29 +67,35 @@ const About: React.FC = () => {
               </Link>
             </div>
             <div className={styles.skillContainer}>
-              <SkillBox
-                title={'Frontend'}
-                list={[
-                  'Javascript',
-                  'React',
-                  'Redux',
-                  'Next',
-                  'TypeScript',
-                  'CSS Modules',
-                  'Styled Components',
-                ]}
-                color={''}
-              />
-              <SkillBox
-                title={'Backend'}
-                list={['MongoDB', 'Node.js', 'GCP', 'Express']}
-                color={''}
-              />
-              <SkillBox
-                title={'Toolbox'}
-                list={['Photoshop', 'Illustrator', 'Adobe XD', 'Procreate', 'Git', 'Figma']}
-                color={''}
-              />
+              <Slide direction="right" triggerOnce>
+                <SkillBox
+                  title={'Frontend'}
+                  list={[
+                    'Javascript',
+                    'React',
+                    'Redux',
+                    'Next',
+                    'TypeScript',
+                    'CSS Modules',
+                    'Styled Components',
+                  ]}
+                  color={''}
+                />
+              </Slide>
+              <Slide direction="right" triggerOnce duration={2000}>
+                <SkillBox
+                  title={'Backend'}
+                  list={['MongoDB', 'Node.js', 'GCP', 'Express']}
+                  color={''}
+                />
+              </Slide>
+              <Slide direction="right" triggerOnce duration={3000}>
+                <SkillBox
+                  title={'Toolbox'}
+                  list={['Photoshop', 'Illustrator', 'Adobe XD', 'Procreate', 'Git', 'Figma']}
+                  color={''}
+                />
+              </Slide>
             </div>
           </div>
         </div>
