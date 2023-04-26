@@ -5,13 +5,11 @@ import styles from './ProjectPage.module.css';
 import { allTags, projects } from './projects';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../sections/footer/Footer';
-// import DropdownMenu from '../../components/dropdown/Dropdown';
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
 import { IoMdArrowDropright } from 'react-icons/io';
 
 const ProjectPage: React.FC = () => {
-  // Button state
   const [activeProject, setActiveProject] = useState(projects);
   const [activeTag, setActiveTag] = useState('all');
 
@@ -37,8 +35,8 @@ const ProjectPage: React.FC = () => {
         <Wrapper>
           <div className={styles.content}>
             <Navbar />
-            <div className={styles.topSection}>
-              <div className={styles.textContainer}>
+            <div className={styles.gridParent}>
+              <div className={styles.filterAndCountContainer}>
                 <div className={styles.countUpContainer}>
                   <div className={styles.countUp}>
                     <p className={styles.counter}>+</p>
@@ -77,24 +75,20 @@ const ProjectPage: React.FC = () => {
                     </button>
                   ))}
                 </div>
-                {/* <DropdownMenu activeTag={activeTag} filterProjects={filterProjects} /> */}
               </div>
+              <h2 className={styles.title}>PROJECTS</h2>
 
-              <div className={styles.gridParent}>
-                <h2 className={styles.title}>PROJECTS</h2>
-
-                {activeProject.map((project) => (
-                  <Project
-                    title={project.title}
-                    tags={project.tags}
-                    image={project.image}
-                    key={project.title}
-                    link={project.link}
-                  >
-                    <p>{project.description}</p>
-                  </Project>
-                ))}
-              </div>
+              {activeProject.map((project) => (
+                <Project
+                  title={project.title}
+                  tags={project.tags}
+                  image={project.image}
+                  key={project.title}
+                  link={project.link}
+                >
+                  <p>{project.description}</p>
+                </Project>
+              ))}
             </div>
           </div>
         </Wrapper>

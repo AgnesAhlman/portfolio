@@ -13,17 +13,12 @@
   min-height: 80px;
 }
 
-.links {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-
 .link {
   color: #e5e7ec;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+  font-family: 'Tilt Warp', cursive;
 }
 
 .link:hover {
@@ -43,8 +38,5 @@ span {
 @media (max-width: 481px) {
   .container {
     border: none;
-  }
-  .links {
-    display: none;
   }
 }

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { IoMdArrowDropright } from 'react-icons/io';
 import SkillBox from '../../components/skillBox/SkillBox';
 import { Slide } from 'react-awesome-reveal';
+import { RxDotFilled } from 'react-icons/rx';
+import Button from './Button';
 
 const About: React.FC = () => {
   const [activeButton, setActiveButton] = useState('about');
@@ -14,27 +16,27 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className={styles.buttonContainer}>
-        <button
-          className={styles.primaryButton}
-          onClick={() => {
-            handleButtonClick('about');
-          }}
-        >
-          About
-        </button>
-        <button
-          className={styles.button}
-          onClick={() => {
-            handleButtonClick('skills');
-          }}
-        >
-          Skills
-        </button>
-      </div>
-      {activeButton === 'about' && (
-        <div className={styles.container} id="about">
-          <div className={styles.content}>
+      <div className={styles.container} id="about">
+        <div className={styles.buttonContainer}>
+          <Button
+            type={'about'}
+            onClick={() => {
+              handleButtonClick('about');
+            }}
+          >
+            About {activeButton === 'about' && <RxDotFilled />}
+          </Button>
+          <Button
+            type={'skills'}
+            onClick={() => {
+              handleButtonClick('skills');
+            }}
+          >
+            Skills {activeButton === 'skills' && <RxDotFilled />}
+          </Button>
+        </div>
+        {activeButton === 'about' && (
+          <div className={`${styles.content} ${styles.contentAbout}`}>
             <div className={styles.textContainer}>
               <h2 className={styles.title}>Hi, I&apos;m Agnes!</h2>
               <div className={styles.subtitle}>
@@ -48,20 +50,18 @@ const About: React.FC = () => {
               </p>
             </div>
           </div>
-        </div>
-      )}
-      {activeButton === 'skills' && (
-        <div className={styles.projectContainer}>
-          <div className={styles.content}>
+        )}
+        {activeButton === 'skills' && (
+          <div className={`${styles.content} ${styles.contentSkills}`}>
             <div className={styles.textContainer}>
               <h2 className={styles.title}>Skills</h2>
 
               <p className={styles.text}>
                 During my education, we did almost one project a week for 6 months, which taught me
-                to manage time and meet deadlines. Since then, I ha ve worked on different projects
-                - some for fun and some for work.
+                to manage time and meet deadlines. Since then, I have worked on different projects -
+                some for fun and some for work.
               </p>
-              <p className={styles.text}>Check out my projects on the link below!</p>
+              <p className={styles.linkText}>Check out my projects on the link below!</p>
               <Link to="/projects" className={styles.link}>
                 See Projects <IoMdArrowDropright />
               </Link>
@@ -98,8 +98,8 @@ const About: React.FC = () => {
               </Slide>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </>
   );
 };
