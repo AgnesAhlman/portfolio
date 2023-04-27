@@ -54,11 +54,12 @@
 }
 
 .aboutText {
-  max-width: 50ch;
+  max-width: 70ch;
 }
 .skillText {
   max-width: 30ch;
 }
+
 .linkText {
   color: #b04d4d;
   max-width: 20ch;

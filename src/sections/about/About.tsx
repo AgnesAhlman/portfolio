@@ -41,9 +41,15 @@ const About: React.FC = () => {
               <h2 className={styles.title}>Hi, I&apos;m Agnes!</h2>
               <p className={`${styles.text} ${styles.aboutText}`}>
                 My main focus is on frontend development, but I am also curious about the backend
-                and enjoy learning more about it. Beyond my technical skills, I also have a lot of
+                and enjoy learning more about it. Beyond my technical skills, I have a lot of
                 experience with leadership and working with people. As a former preschool teacher, I
-                understand the importance of effective communication and teamwork.
+                understand the importance of effective communication and teamwork. I love to bring
+                ideas to life through code and design, and I always strive to make things better,
+                faster, and more efficient.
+              </p>
+              <p className={`${styles.text} ${styles.aboutText}`}>
+                If you're looking for a enthusiastic developer with an eye for design, look no
+                further. Let's create something amazing together!
               </p>
             </div>
           </div>
