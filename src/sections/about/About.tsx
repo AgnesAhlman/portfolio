@@ -38,17 +38,13 @@ const About: React.FC = () => {
         {activeButton === 'about' && (
           <div className={`${styles.content} ${styles.contentAbout}`}>
             <div className={styles.textContainer}>
-              <Slide direction="left" triggerOnce duration={1000}>
-                <h2 className={styles.title}>Hi, I&apos;m Agnes!</h2>
-              </Slide>
-              <Slide direction="left" triggerOnce duration={2500}>
-                <p className={`${styles.text} ${styles.aboutText}`}>
-                  My main focus is on frontend development, but I am also curious about the backend
-                  and enjoy learning more about it. Beyond my technical skills, I also have a lot of
-                  experience with leadership and working with people. As a former preschool teacher,
-                  I understand the importance of effective communication and teamwork.
-                </p>
-              </Slide>
+              <h2 className={styles.title}>Hi, I&apos;m Agnes!</h2>
+              <p className={`${styles.text} ${styles.aboutText}`}>
+                My main focus is on frontend development, but I am also curious about the backend
+                and enjoy learning more about it. Beyond my technical skills, I also have a lot of
+                experience with leadership and working with people. As a former preschool teacher, I
+                understand the importance of effective communication and teamwork.
+              </p>
             </div>
           </div>
         )}

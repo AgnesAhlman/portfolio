@@ -13,4 +13,12 @@
   border-radius: 1rem 1rem 0rem 0rem;
   min-width: 10rem;
   font-family: 'Tilt Warp', cursive;
+  margin-bottom: -1px;
+  z-index: 90;
+}
+
+@media (max-width: 481px) {
+  .button {
+    width: 50%;
+  }
 }

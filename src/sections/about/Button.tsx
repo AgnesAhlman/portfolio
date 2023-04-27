@@ -14,7 +14,7 @@ interface ButtonData {
 
 const data: Record<ButtonType, ButtonData> = {
   about: {
-    backgroundColor: '#282a3c',
+    backgroundColor: '#2b2d3c',
     textColor: 'var(--details-color)',
   },
   skills: {
