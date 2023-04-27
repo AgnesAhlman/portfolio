@@ -9,10 +9,10 @@
 .content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   width: 90%;
   min-height: 70vh;
   align-items: center;
-  justify-content: space-around;
   background-color: #2b2d3c;
   border: 1px solid var(--details-color);
 }
@@ -23,6 +23,7 @@
 
 .contentSkills {
   background-color: var(--details-color);
+  color: white;
 }
 
 .buttonContainer {
@@ -36,6 +37,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 4rem;
 }
 
 .title {
@@ -50,8 +52,29 @@
   font-size: 20px;
 }
 
+.aboutText {
+  max-width: 50ch;
+}
+.skillText {
+  max-width: 30ch;
+}
+.linkText {
+  color: #b04d4d;
+  max-width: 20ch;
+}
+
 .link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 200;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Tilt Warp', cursive;
   color: white;
+  margin-top: 1rem;
+  color: #b04d4d;
 }
 
 .skillContainer {
@@ -76,5 +99,7 @@
   .skillContainer {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
   }
 }

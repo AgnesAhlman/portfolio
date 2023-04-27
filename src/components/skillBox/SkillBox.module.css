@@ -1,8 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  border-radius: 0.5rem;
 }
 
 .title {
@@ -28,13 +26,40 @@
   width: 10rem;
 }
 
+.arrow {
+  display: none;
+}
+
 @media (max-width: 481px) {
+  .container {
+    margin-left: 1rem;
+  }
+
   .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 1rem;
   }
   .list {
     flex-direction: row;
     gap: 1rem;
     flex-wrap: wrap;
+  }
+
+  .listItem {
+    display: none;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .arrow {
+    display: block;
+  }
+
+  .icon {
+    display: none;
   }
 }

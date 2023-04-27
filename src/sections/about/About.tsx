@@ -38,16 +38,17 @@ const About: React.FC = () => {
         {activeButton === 'about' && (
           <div className={`${styles.content} ${styles.contentAbout}`}>
             <div className={styles.textContainer}>
-              <h2 className={styles.title}>Hi, I&apos;m Agnes!</h2>
-              <div className={styles.subtitle}>
-                <h4>I love being creative, whether it’s coding or art.</h4>
-              </div>
-              <p className={styles.text}>
-                My main focus is on frontend development, but I am also curious about the backend
-                and enjoy learning more about it. Beyond my technical skills, I also have a lot of
-                experience with leadership and working with people. As a former preschool teacher, I
-                understand the importance of effective communication and teamwork.
-              </p>
+              <Slide direction="left" triggerOnce duration={1000}>
+                <h2 className={styles.title}>Hi, I&apos;m Agnes!</h2>
+              </Slide>
+              <Slide direction="left" triggerOnce duration={2500}>
+                <p className={`${styles.text} ${styles.aboutText}`}>
+                  My main focus is on frontend development, but I am also curious about the backend
+                  and enjoy learning more about it. Beyond my technical skills, I also have a lot of
+                  experience with leadership and working with people. As a former preschool teacher,
+                  I understand the importance of effective communication and teamwork.
+                </p>
+              </Slide>
             </div>
           </div>
         )}
@@ -56,12 +57,12 @@ const About: React.FC = () => {
             <div className={styles.textContainer}>
               <h2 className={styles.title}>Skills</h2>
 
-              <p className={styles.text}>
+              <p className={`${styles.text} ${styles.skillText}`}>
                 During my education, we did almost one project a week for 6 months, which taught me
                 to manage time and meet deadlines. Since then, I have worked on different projects -
                 some for fun and some for work.
               </p>
-              <p className={styles.linkText}>Check out my projects on the link below!</p>
+              {/* <p className={styles.linkText}>Check out my projects on the link below!</p> */}
               <Link to="/projects" className={styles.link}>
                 See Projects <IoMdArrowDropright />
               </Link>
@@ -76,8 +77,8 @@ const About: React.FC = () => {
                     'Redux',
                     'Next',
                     'TypeScript',
-                    'CSS Modules',
                     'Styled Components',
+                    'CSS Modules',
                   ]}
                   color={''}
                 />

@@ -6,7 +6,10 @@
   padding: 1rem;
   font-size: 16px;
   cursor: pointer;
-  border: 1px solid var(--details-color);
+  border-top: 1px solid var(--details-color);
+  border-left: 1px solid var(--details-color);
+  border-right: 1px solid var(--details-color);
+  border-bottom: none;
   border-radius: 1rem 1rem 0rem 0rem;
   min-width: 10rem;
   font-family: 'Tilt Warp', cursive;
