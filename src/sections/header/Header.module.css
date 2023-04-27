@@ -118,7 +118,21 @@
 
 @media (max-width: 481px) {
   .contentContainer {
+    flex-direction: column;
     justify-content: center;
+  }
+
+  .animation {
+    position: absolute;
+    width: 450px;
+    height: 550px;
+    top: 40px;
+  }
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    margin: 0;
   }
 
   .title {
