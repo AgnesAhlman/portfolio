@@ -5,6 +5,7 @@ import styles from './Header.module.css';
 import HeroImg from '../../assets/heroImg.png';
 import GreenBlob from '../../components/animation/GreenBlob';
 import { IoMdArrowDropright } from 'react-icons/io';
+import DownloadButton from '../../components/downloadbutton/DownloadButton';
 
 const Header: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const Header: React.FC = () => {
               <a href="cv_agnesahlman.pdf" download="cv_agnesahlman.pdf" className={styles.cvLink}>
                 Download CV <IoMdArrowDropright />
               </a>
+              {/* <DownloadButton /> */}
             </div>
           </div>
           <div className={styles.imgContainer}>

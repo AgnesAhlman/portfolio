@@ -33,7 +33,7 @@ const SkillBox: React.FC<ServiceProps> = ({ title, list, color }) => {
       ) : (
         <h5 className={styles.title}>{title}</h5>
       )}
-      <div className={styles.list}>
+      <div className={`${styles.list} ${isOpen ? styles.listOpen : ''}`}>
         {list.map((item) => (
           <div className={`${styles.listItem} ${isOpen ? styles.open : ''}`} key={item}>
             <BsPatchCheckFill style={{ color }} width={16} height={16} className={styles.icon} />
