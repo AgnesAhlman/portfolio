@@ -66,7 +66,7 @@ const About: React.FC = () => {
               </p>
               {/* <p className={styles.linkText}>Check out my projects on the link below!</p> */}
               <Link to="/projects" className={styles.link}>
-                See Projects <IoMdArrowDropright />
+                Go to Projects <IoMdArrowDropright />
               </Link>
             </div>
             <div className={styles.skillContainer}>
