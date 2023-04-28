@@ -29,7 +29,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className={styles.imgContainer}>
-            <img src={HeroImg} className={styles.img} />
+            <img src={HeroImg} className={styles.img} alt="Profile picture of Agnes Ahlman" />
           </div>
         </div>
       </Wrapper>

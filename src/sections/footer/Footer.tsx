@@ -28,13 +28,24 @@ const Footer: React.FC = () => {
             to="https://www.linkedin.com/in/agnes-ahlman-1b2018251/"
             target="_blank"
             className={styles.link}
+            aria-label="Visit my LinkedIn"
           >
             <IoLogoLinkedin size={30} />
           </Link>
-          <Link to="https://github.com/AgnesAhlman" target="_blank" className={styles.link}>
+          <Link
+            to="https://github.com/AgnesAhlman"
+            target="_blank"
+            className={styles.link}
+            aria-label="Visit my Github"
+          >
             <FaGithub size={30} />
           </Link>
-          <Link to="https://www.instagram.com/artbyahlman/" target="_blank" className={styles.link}>
+          <Link
+            to="https://www.instagram.com/artbyahlman/"
+            target="_blank"
+            className={styles.link}
+            aria-label="Visit my Instagram"
+          >
             <RiInstagramFill size={30} />
           </Link>
         </div>
