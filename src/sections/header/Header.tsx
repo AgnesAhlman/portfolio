@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             <p className={styles.portfolio}>PORTFOLIO: AGNES AHLMAN </p>
 
             <div className={styles.cvLinkContainer}>
-              <a href="cv_Agnes.pdf" download="cv_Agnes.pdf" className={styles.cvLink}>
+              <a href="cv-AgnesAhlman.pdf" download="cv-AgnesAhlman.pdf" className={styles.cvLink}>
                 Download CV <IoMdArrowDropright />
               </a>
             </div>
