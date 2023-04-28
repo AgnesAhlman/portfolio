@@ -60,9 +60,9 @@ const About: React.FC = () => {
               <h2 className={styles.title}>Skills</h2>
 
               <p className={`${styles.text} ${styles.skillText}`}>
-                During my education, we did almost one project a week for 6 months, which taught me
-                to manage time and meet deadlines. Since then, I have worked on different projects -
-                some for fun and some for work.
+                During my education, we almost did one project a week for 6 months, which taught me
+                to manage time and meet deadlines. Since then, I have worked on a couple of projects
+                with different frameworks and techniques to broaden my knowledge.
               </p>
               {/* <p className={styles.linkText}>Check out my projects on the link below!</p> */}
               <Link to="/projects" className={styles.link}>
