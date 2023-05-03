@@ -33,7 +33,7 @@
   left: 0px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .link {
     padding: 13px 30px 13px;
   }
