@@ -69,7 +69,7 @@
 /*** Mobile ***/
 @media (max-width: 481px) {
   .container {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   .textContainer {
     padding: 1rem;
@@ -82,6 +82,8 @@
 
   .text {
     text-align: start;
+    line-height: 1.5rem;
+    font-size: 15px;
   }
 
   .skillContainer {
