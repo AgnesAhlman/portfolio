@@ -1,36 +1,60 @@
 import React from 'react';
 import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './Skills.module.css';
-// import { FaToolbox } from 'react-icons/fa';
-// import { AiFillDatabase } from 'react-icons/ai';
-// import { RiCodeBoxFill } from 'react-icons/ri';
+import { Slide } from 'react-awesome-reveal';
 import SkillBox from '../../components/skillBox/SkillBox';
-import SkillsImage from '../../assets/skills.png';
 
-const skillsFrontend = ['HTML5', 'CSS3', 'Javascript', 'React', 'Redux', 'Next.js', 'TypeScript'];
-const skillsBackend = ['Node.js', 'MongoDB', 'GCP', 'Express.js'];
-const toolbox = ['Git', 'Illustrator', 'Photoshop', 'Adobe XD'];
+import NavLink from '../../components/navlink/NavLink';
 
 const Skills: React.FC = () => {
   return (
     <>
-      <div className={styles.container}>
-        <Wrapper justify="center">
-          {/* <div className={styles.skillBoxes}>
-            <div className={styles.box}>
-              <SkillBox title="Frontend" list={skillsFrontend} color={'purple'}></SkillBox>
-            </div>
+      <Wrapper justify="center">
+        <div className={styles.container}>
+          <div className={styles.skillContainer}>
+            <Slide direction="left" triggerOnce duration={3000}>
+              <SkillBox
+                title={'Frontend'}
+                list={[
+                  'Javascript',
+                  'React',
+                  'Redux',
+                  'Next',
+                  'TypeScript',
+                  'Styled Components',
+                  'CSS Modules',
+                ]}
+                color={''}
+              />
+            </Slide>
+            <Slide direction="left" triggerOnce duration={2000}>
+              <SkillBox
+                title={'Backend'}
+                list={['MongoDB', 'Node.js', 'GCP', 'Express']}
+                color={''}
+              />
+            </Slide>
+            <Slide direction="left" triggerOnce duration={1000}>
+              <SkillBox
+                title={'Toolbox'}
+                list={['Photoshop', 'Illustrator', 'Adobe XD', 'Procreate', 'Git', 'Figma']}
+                color={''}
+              />
+            </Slide>
+          </div>
+          <div className={styles.textContainer}>
+            <h2 className={styles.title}>Skills</h2>
 
-            <div className={styles.box}>
-              <SkillBox title="Backend" list={skillsBackend} color={'purple'} />
-            </div>
-            <div className={styles.box}>
-              <SkillBox title="Toolbox" list={toolbox} color={'purple'} />
-            </div>
-          </div> */}
-          <img src={SkillsImage} alt="skills-image" width={500} />
-        </Wrapper>
-      </div>
+            <p className={styles.text}>
+              During my education, we almost did one project a week for 6 months, which taught me to
+              manage time and meet deadlines. Since then, I have worked on a couple of projects with
+              different techniques to broaden my knowledge.
+            </p>
+
+            <NavLink linkType="projects" />
+          </div>
+        </div>
+      </Wrapper>
     </>
   );
 };

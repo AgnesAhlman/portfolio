@@ -1,28 +1,82 @@
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: 90vh;
+  min-height: 70vh;
+  gap: 2rem;
 }
 
-.skillBoxes {
+.textContainer {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 100%;
+  align-items: center;
+  width: 40%;
 }
 
-.box {
+.title {
+  font-size: 2.5rem;
+  font-family: 'Tilt Warp', cursive;
+}
+
+.text {
+  max-width: 60ch;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  line-height: 1.8rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+.linkText {
+  color: #b04d4d;
+  max-width: 20ch;
+}
+
+.link {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 200;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Tilt Warp', cursive;
+  color: white;
+  margin-top: 1rem;
+  color: #b04d4d;
 }
 
-/* @media (max-width: 481px) {
-  .box {
-    width: 100%;
+.skillContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+@media (max-width: 481px) {
+  .container {
+    margin-top: 10rem;
   }
-} */
+  .textContainer {
+    padding: 1rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    text-align: start;
+  }
+
+  .skillContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}

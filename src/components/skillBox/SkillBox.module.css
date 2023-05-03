@@ -36,12 +36,15 @@
   font-family: 'Tilt Warp', cursive;
   font-size: 1.2rem;
   background-color: #e56565;
-  border-radius: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
   width: 100%;
+}
+
+.icon {
+  color: var(--details-color);
 }
 
 @media (max-width: 481px) {

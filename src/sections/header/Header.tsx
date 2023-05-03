@@ -2,10 +2,11 @@ import React from 'react';
 import Navbar from '../../components/navbar/Navbar';
 import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './Header.module.css';
-import HeroImg from '../../assets/heroImg.png';
+import HeroImg from '../../assets/hero-img.png';
 import GreenBlob from '../../components/animation/GreenBlob';
-import { IoMdArrowDropright } from 'react-icons/io';
-import DownloadButton from '../../components/downloadbutton/DownloadButton';
+// import { IoMdArrowDropright } from 'react-icons/io';
+// import DownloadButton from '../../components/downloadbutton/DownloadButton';
+import NavLink from '../../components/navlink/NavLink';
 
 const Header: React.FC = () => {
   return (
@@ -22,10 +23,7 @@ const Header: React.FC = () => {
             <p className={styles.portfolio}>PORTFOLIO: AGNES AHLMAN </p>
 
             <div className={styles.cvLinkContainer}>
-              <a href="cv_agnesahlman.pdf" download="cv_agnesahlman.pdf" className={styles.cvLink}>
-                Download CV <IoMdArrowDropright />
-              </a>
-              {/* <DownloadButton /> */}
+              <NavLink linkType={'cv'} />
             </div>
           </div>
           <div className={styles.imgContainer}>
