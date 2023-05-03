@@ -10,7 +10,7 @@ const useViewport = (): Device => {
   useEffect(() => {
     const handleResize = (): void => {
       const { innerWidth } = window;
-      setIsMobile(innerWidth <= 768);
+      setIsMobile(innerWidth <= 482);
     };
 
     handleResize();

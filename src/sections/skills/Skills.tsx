@@ -12,7 +12,7 @@ const Skills: React.FC = () => {
       <Wrapper justify="center">
         <div className={styles.container}>
           <div className={styles.skillContainer}>
-            <Slide direction="left" triggerOnce duration={3000}>
+            <Slide direction="left" triggerOnce duration={3000} className={styles.skillBox}>
               <SkillBox
                 title={'Frontend'}
                 list={[

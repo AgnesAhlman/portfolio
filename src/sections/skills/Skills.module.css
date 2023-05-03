@@ -55,6 +55,18 @@
   justify-content: flex-end;
 }
 
+/*** Tablet ***/
+
+@media (min-width: 482px) and (max-width: 1180px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .textContainer {
+    width: 80%;
+  }
+}
+
+/*** Mobile ***/
 @media (max-width: 481px) {
   .container {
     margin-top: 10rem;

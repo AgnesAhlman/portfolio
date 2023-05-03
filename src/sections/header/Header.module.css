@@ -96,14 +96,32 @@
   }
 }
 
-@media (min-width: 961px) {
+@media (min-width: 1181px) {
   .titleContainer + .imgContainer {
     width: 50%;
   }
 }
 
-/* @media (max-width: 481px) {
-  .container {
-    margin-bottom: 5rem;
+/*** Tablet ***/
+
+@media (min-width: 482px) and (max-width: 1180px) {
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
-} */
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    margin: 2rem;
+    text-align: center;
+  }
+}
