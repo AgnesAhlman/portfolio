@@ -22,9 +22,7 @@ const Header: React.FC = () => {
             </h1>
             <p className={styles.portfolio}>PORTFOLIO: AGNES AHLMAN </p>
 
-            <div className={styles.cvLinkContainer}>
-              <NavLink linkType={'cv'} />
-            </div>
+            <NavLink linkType={'cv'} />
           </div>
           <div className={styles.imgContainer}>
             <img src={HeroImg} className={styles.img} alt="Profile picture of Agnes Ahlman" />

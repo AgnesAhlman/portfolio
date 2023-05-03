@@ -77,16 +77,18 @@
   .title {
     font-size: 3rem;
     line-height: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
   }
 
   .portfolio {
     font-size: 0.6rem;
+    margin-bottom: 2rem;
   }
 
   .img {
     max-width: 200px;
+    margin-top: 2rem;
   }
 
   .cvLink {
@@ -100,8 +102,8 @@
   }
 }
 
-@media (max-width: 481px) {
+/* @media (max-width: 481px) {
   .container {
     margin-bottom: 5rem;
   }
-}
+} */
