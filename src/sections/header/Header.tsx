@@ -4,8 +4,6 @@ import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './Header.module.css';
 import HeroImg from '../../assets/hero-img.png';
 import GreenBlob from '../../components/animation/GreenBlob';
-// import { IoMdArrowDropright } from 'react-icons/io';
-// import DownloadButton from '../../components/downloadbutton/DownloadButton';
 import NavLink from '../../components/navlink/NavLink';
 
 const Header: React.FC = () => {
