@@ -55,7 +55,7 @@
   margin-bottom: 5rem;
 }
 
-@media (max-width: 481px) {
+@media (max-width: 600px) {
   .contentContainer {
     flex-direction: column;
     justify-content: center;
