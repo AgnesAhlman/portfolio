@@ -2,7 +2,7 @@ import React, { useState, type PropsWithChildren } from 'react';
 
 import styles from './SkillBox.module.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
-import { RiArrowDownSFill } from 'react-icons/ri';
+import { RiArrowDownSFill, RiArrowUpSFill } from 'react-icons/ri';
 import useViewport from '../../hooks/useViewport';
 
 interface ServiceProps extends PropsWithChildren {
@@ -26,9 +26,7 @@ const SkillBox: React.FC<ServiceProps> = ({ title, list, color }) => {
           }}
         >
           {title}
-          <div className={styles.arrow}>
-            <RiArrowDownSFill />
-          </div>
+          <div className={styles.arrow}>{isOpen ? <RiArrowUpSFill /> : <RiArrowDownSFill />}</div>
         </button>
       ) : (
         <h5 className={styles.title}>{title}</h5>
