@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Synthax AB',
     description:
-      'I did a project for Synthax AB, where I created their logo, web design, and website. It was a great opportunity for me to learn new skills and technologies, such as Next.js and TypeScript. I also got to try implementing light and dark mode for thefirst time.',
+      'I did a project for Synthax AB, where I created their logo, web design, and website. It was a great opportunity for me to learn new skills and technologies, such as Next.js and TypeScript. I also got to try implementing light and dark mode for the first time.',
     image: '/synthax-pp.png',
     tags: ['Javascript', 'React', 'Next.js', 'TypeScript'],
     link: 'https://www.synthax.se/sv',
