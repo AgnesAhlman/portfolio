@@ -105,6 +105,7 @@ span {
   border-radius: 0.8rem;
   min-width: 7rem;
   color: black;
+  cursor: pointer;
 }
 
 .button:hover {
