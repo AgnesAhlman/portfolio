@@ -1,8 +1,7 @@
 import React from 'react';
 import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './Skills.module.css';
-import { Slide } from 'react-awesome-reveal';
-import { Fade } from 'react-awesome-reveal';
+import { Slide, Fade } from 'react-awesome-reveal';
 import SkillBox from '../../components/skillBox/SkillBox';
 
 import NavLink from '../../components/navlink/NavLink';
