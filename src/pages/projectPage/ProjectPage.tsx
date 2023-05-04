@@ -77,7 +77,6 @@ const ProjectPage: React.FC = () => {
                 </div>
               </div>
               <h2 className={styles.title}>PROJECTS</h2>
-
               {activeProject.map((project) => (
                 <Project
                   title={project.title}

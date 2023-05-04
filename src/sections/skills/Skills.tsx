@@ -2,6 +2,7 @@ import React from 'react';
 import Wrapper from '../../components/wrapper/Wrapper';
 import styles from './Skills.module.css';
 import { Slide } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 import SkillBox from '../../components/skillBox/SkillBox';
 
 import NavLink from '../../components/navlink/NavLink';
@@ -43,15 +44,17 @@ const Skills: React.FC = () => {
             </Slide>
           </div>
           <div className={styles.textContainer}>
-            <h2 className={styles.title}>Skills</h2>
+            <Fade duration={3000}>
+              <h2 className={styles.title}>Skills</h2>
 
-            <p className={styles.text}>
-              During my education, we almost did one project a week for 6 months, which taught me to
-              manage time and meet deadlines. Since then, I have worked on a couple of projects with
-              different techniques to broaden my knowledge.
-            </p>
+              <p className={styles.text}>
+                During my education, we almost did one project a week for 6 months, which taught me
+                to manage time and meet deadlines. Since then, I have worked on a couple of projects
+                with different techniques to broaden my knowledge.
+              </p>
 
-            <NavLink linkType="projects" />
+              <NavLink linkType="projects" />
+            </Fade>
           </div>
         </div>
       </Wrapper>
