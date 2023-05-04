@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import styles from './Navbar.module.css';
 
@@ -8,13 +8,13 @@ const Navbar: React.FC = () => {
     <>
       <div className={styles.container}>
         <div className={styles.content}>
-          <RouterLink to="/" className={styles.agnes}>
+          <Link to="/" className={styles.agnes}>
             agnes<span>.</span>
-          </RouterLink>
+          </Link>
 
-          <RouterLink className={`${styles.routerLink}, ${styles.link}`} to="/projects">
+          <Link to="/projects" className={styles.link}>
             projects
-          </RouterLink>
+          </Link>
         </div>
       </div>
     </>
