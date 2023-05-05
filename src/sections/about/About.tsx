@@ -7,7 +7,7 @@ const About: React.FC = () => {
     <>
       <div className={styles.container} id="about">
         <div className={styles.content}>
-          <Fade duration={3000}>
+          <Fade duration={2000}>
             <div className={styles.textContainer}>
               <h2 className={styles.title}>Hi, I&apos;m Agnes!</h2>
               <p className={styles.text}>
