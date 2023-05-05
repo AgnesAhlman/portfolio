@@ -119,6 +119,10 @@ span {
   .gridParent {
     display: flex;
     flex-direction: column-reverse;
+    /* gap: 3rem; */
+  }
+  .filterAndCountContainer {
+    position: initial;
   }
 }
 
