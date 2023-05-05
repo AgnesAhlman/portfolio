@@ -36,6 +36,20 @@ const ProjectPage: React.FC = () => {
           <div className={styles.content}>
             <Navbar />
             <div className={styles.gridParent}>
+              <div className={styles.leftColumnWrapper}>
+                <h2 className={styles.title}>PROJECTS</h2>
+                {activeProject.map((project) => (
+                  <Project
+                    title={project.title}
+                    tags={project.tags}
+                    image={project.image}
+                    key={project.title}
+                    link={project.link}
+                  >
+                    <p>{project.description}</p>
+                  </Project>
+                ))}
+              </div>
               <div className={styles.filterAndCountContainer}>
                 <div className={styles.countUpContainer}>
                   <div className={styles.countUp}>
@@ -76,18 +90,6 @@ const ProjectPage: React.FC = () => {
                   ))}
                 </div>
               </div>
-              <h2 className={styles.title}>PROJECTS</h2>
-              {activeProject.map((project) => (
-                <Project
-                  title={project.title}
-                  tags={project.tags}
-                  image={project.image}
-                  key={project.title}
-                  link={project.link}
-                >
-                  <p>{project.description}</p>
-                </Project>
-              ))}
             </div>
           </div>
         </Wrapper>

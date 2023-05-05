@@ -9,22 +9,12 @@
 
 .content {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   width: 90%;
   min-height: 70vh;
   align-items: center;
   background-color: #2b2d3c;
   border: 1px solid var(--details-color);
-}
-
-.contentAbout {
-  background-color: #2b2d3c;
-}
-
-.contentSkills {
-  background-color: var(--details-color);
-
-  color: white;
 }
 
 .buttonContainer {
@@ -37,7 +27,7 @@
 .textContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 4rem;
 }
 
@@ -47,7 +37,7 @@
 }
 
 .text {
-  max-width: 30ch;
+  max-width: 70ch;
   margin: 2rem 0rem;
   line-height: 1.8rem;
   font-size: 20px;
@@ -93,18 +83,13 @@
 /*** MOBILE ***/
 
 @media (max-width: 481px) {
-  .content {
-    border-radius: 0rem 0rem 1rem 1rem;
-  }
   .textContainer {
     padding: 1rem;
   }
   .title {
     font-size: 1.5rem;
   }
-  .subtitle {
-    font-size: 1rem;
-  }
+
   .text {
     width: 100%;
     margin: 2rem 0rem;
